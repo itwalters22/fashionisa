@@ -1,0 +1,263 @@
+body {
+ margin: 0px;
+ padding: 0px;
+ background-color: white ;
+}
+
+nav .logo img {
+		position: absolute;
+ 		max-width: 100%;
+  		height: auto;
+  		width: 20vw;
+  		margin-left: 3vw;
+}
+
+nav {
+	overflow: auto;
+	background-color: white;
+	padding-bottom: 6vh;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	border-bottom: lightgrey solid 1.5px;
+}
+
+nav * {
+	display: inline-block;
+}
+
+nav ul {
+  padding-top: 25px;
+  margin: 0 0 0 19vw;
+  list-style: none;
+  background-color: white;
+}
+
+nav li {
+    cursor: pointer;
+    background-color: white;
+}
+
+nav li a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3vw;
+  text-align: center;
+  padding: 1.5vw 1.5vw;
+  background-color: white;
+}
+
+nav li a:hover {
+	font-weight: bolder;
+	opacity: 0.6;
+} 
+
+nav .srch form div {
+	position: relative;
+  	display: inline-flex;
+  	padding-top: 40px;
+}
+
+nav .srch #searchbar {
+	text-align: left;
+	font-size: 1.3vw;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom-color: black;
+	border-bottom-width: 0.5px;
+}
+
+nav .srch button {
+	background-color: white;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom-color: black;
+	border-bottom-width: 0.5px;
+}
+
+footer {
+	padding-top: 6vh;
+	overflow: auto;
+	background-color: black;
+	padding-bottom: 6vh;
+	display: grid;
+	grid-template-columns: auto;
+	border-top: lightgrey solid 1.5px;
+}
+
+
+footer .social {
+	margin-left: 4vw;
+}
+
+ footer .fa {
+	display: inline-block;
+	font-size: 3vw;
+	max-width: 100%;
+	text-decoration: none;
+	border-radius: 50%;
+	color: white;
+	padding: 2vw 2vw;
+}
+
+footer.fa:hover {
+	opacity: 0.6;
+} 
+
+
+.collage {
+	display: grid;
+  	grid-template-columns: 1fr 1fr 1fr 1fr;
+  	grid-gap: 2%;
+  	background-color: rgb(212,230,238);
+  	padding-left: 2%;
+  	padding-right: 2%;
+  	border-bottom: lightgrey solid 1.5px;
+}
+
+.collage img {
+	max-width: 100%;
+	height: auto;
+	margin-top: 8%;
+	margin-bottom: 8%;
+}
+ 
+h1 {
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: 20px 0;
+  grid-gap: 20px;
+}
+
+h1:after,h1:before {
+  content: " ";
+  display: block;
+  border-bottom: 2px solid black;
+}
+
+article p {
+	text-align: left;
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-top: 2.5%;
+	margin-bottom: 5%;
+}
+
+#myBtn {
+	border: none;
+	background-color: white;
+	font-weight: bold;
+	font-size: 1em;
+	font-family: serif;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: black;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid white;
+  width: 50vw; /* Could be more or less, depending on screen size */
+  height: 35vw;* Could be more or less, depending on screen size */
+  position: relative;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #888;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal form button a:hover {
+  color: #888;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal form {
+text-align: center;
+}
+
+.modal form div {
+  position: relative;
+  display: inline-flex;
+}
+
+.modal form h2{
+	color: white;
+	font-size: 6vw;
+	font-weight: bolder;
+}
+
+.modal form p {
+	color: white;
+	font-size: 2vw;
+	font-weight: bold;
+}
+
+
+.modal form input{
+  max-width:100%;
+  text-align: left;
+  width: 24vw;
+  min-width: 100px;
+  border: black solid 0.5px;
+  height: 25px;
+ /*how to change the font of what the user types in?*/
+}
+
+
+.modal form button{
+	position: absolute;
+	right:0;
+	background-color: white;
+	width: 3vw;
+	padding-right:5px;
+	height: 25px;
+	border-top: black solid 0.5px;
+	border-right: black solid 0.5px;
+	border-bottom: none;
+	border-left: none;
+}
+
+
+@media screen and (max-width: 600px) {
+
+nav .logo img {
+  	width: 40vw;
+}
+
+.modal form button{
+	width: 8vw;
+}
+
+ footer .fa {
+	font-size: 6vw;
+}
+}

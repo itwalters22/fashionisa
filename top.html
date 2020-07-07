@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>fashionisa</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+	<nav>
+		<div class="logo"><a href="#"><img src="fashion isa final3.png"></a></div>
+		<ul>
+			<li><a href="index.html"> home </a></li>
+			<li><a href="about.html"> about </a></li>
+			<li><a href="fashion.html"> fashion </a></li>
+			<li><a href="lifestyle.html"> lifestyle </a></li>
+			<li><a><button id="myBtn"> SUBSCRIBE </button></a></li>
+		</ul>
+		<div class="srch">
+			<form>
+				<div>
+				<input id="searchbar" onkeyup="search_blog()" type="text"
+        name="search" placeholder="search ...">
+        		<button><i class="fa fa-search"></i></button>
+        	</div>
+    		</form>
+    	</div>
+	</nav>
+	<div id="myModal" class="modal">
+			<div class="modal-content">
+					<span class="close">&times;</span>
+			<form class="contact1-form">
+					<p> Subscribe </p>
+					<h2>join fashionisa</h2>
+					<p>Be the first to know when a new blog post comes out!</p><br>
+					<div>
+					<input id="email" class="input1" type="text" name="email" placeholder=" ENTER YOUR EMAIL ADDRESS" required>
+					<button class="contact1-form-btn" type="submit"> <a class="fa fa-envelope-o"></a> </button>
+					</div>
+			</form>
+			</div>
+			<script type="text/javascript" src="contact.js"></script>
+		</div>
+		<script type="text/javascript" src="popup.js"></script>
+</body>
+</html> 
