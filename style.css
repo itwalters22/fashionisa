@@ -15,7 +15,7 @@ nav .logo img {
 nav {
 	overflow: auto;
 	background-color: white;
-	padding-bottom: 8vh;
+	padding-bottom: 10vh;
 	display: grid;
 	grid-template-columns: auto auto auto;
 	border-bottom: lightgrey solid 1.5px;
@@ -250,22 +250,40 @@ text-align: center;
   background: rgb(212,230,238);
 }
 
-.home div {
+.home a {
   position: relative;
-  text-align: center;
+  text-align: left;
   color: white;
 }
 
-.home div img {
+.home a img {
 	max-width: 100%;
 	height: auto;
 	border: lightgrey solid 1.5px;
 }
 
-.home div a{
+.home a span {
+	background-color: white;
+}
+.home a div {
   position: absolute;
   top: 8px;
   left: 16px;
+  text-decoration: none;
+  color:black;
+}
+
+#title {
+	font-size: 2.5vw;
+}
+
+
+#info {
+	font-size: 1vw;
+}
+
+#des {
+	font-size: 1.4vw;
 }
 
 
@@ -293,7 +311,7 @@ text-align: center;
 @media screen and (max-width: 700px) {
 
 nav .logo img {
-  	width: 40vw;
+  	width: 30vw;
 }
 
 .modal form button{
