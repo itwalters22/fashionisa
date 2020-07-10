@@ -7,14 +7,15 @@
   <description>fashionisa fashion and lifestyle blog posts</description>
   <item>
     <image>
-        <url>https://itwalters22.github.io/fashionisa/fashion1.jpg</url>
-        <link>https://itwalters22.github.io/fashionisa</link>
+         <![CDATA[<img> https://itwalters22.github.io/fashionisa/fashion1.jpg </img>]]>
     </image>
     <title>5 Adorable Ways to Style Biker Shorts</title>
     <link>https://itwalters22.github.io/fashionisa/fashion1.html</link>
     <author>Isa Walters</author>
     <pubDate>July 9th, 2020</pubDate>
-    <description>Get ready to look cute and comfy!</description>
+    <description>
+      <![CDATA[Get ready to look cute and comfy!]]>
+    </description>
   </item>
 </channel>
 
